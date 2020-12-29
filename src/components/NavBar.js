@@ -1,5 +1,6 @@
 import React from 'react'
 import M from "materialize-css"
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
 
@@ -24,6 +25,7 @@ const NavBar = () => {
                     <a href="#" className="black-text">categoria 2</a>
                 </li>
             </ul>
+            <CartWidget/>
             </div>
         </nav>
 

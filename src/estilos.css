@@ -6,4 +6,8 @@
     .brand-logo {
         margin-left: 0;
     }   
+
+    #cart-widget {
+        margin-right: 1rem;
+    }
 }
