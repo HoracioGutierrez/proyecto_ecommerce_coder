@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Item = ({id,title,price,pictureUrl}) => {
     return (
@@ -12,7 +13,7 @@ const Item = ({id,title,price,pictureUrl}) => {
                     <p>${price}</p>
                 </div>
                 <div className="card-action">
-                    <a href="#">ver detalle</a>
+                    <NavLink to={`/item/${id}`}>ver detalle</NavLink>
                 </div>
             </div>
         </div>

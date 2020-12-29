@@ -1,6 +1,7 @@
 import React from 'react'
 import M from "materialize-css"
 import CartWidget from './CartWidget';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -13,16 +14,16 @@ const NavBar = () => {
         <>
         <nav className="yellow accent-2">
             <div className="nav-wrapper">
-            <a href="#!" className="brand-logo black-text">CoderLibre</a>
+            <NavLink to="/" exact className="brand-logo black-text">CoderLibre</NavLink>
             <a href="#" data-target="mobile-demo" className="sidenav-trigger black-text">
                 <i className="material-icons">menu</i>
             </a>
             <ul className="right hide-on-med-and-down">
                 <li>
-                    <a href="#" className="black-text">categoria 1</a>
+                    <NavLink to="/category/1" className="black-text">computacion</NavLink>
                 </li>
                 <li>
-                    <a href="#" className="black-text">categoria 2</a>
+                    <NavLink to="/category/2" className="black-text">dvds</NavLink>
                 </li>
             </ul>
             <CartWidget/>
@@ -31,10 +32,10 @@ const NavBar = () => {
 
         <ul className="sidenav" id="mobile-demo">
             <li>
-                <a href="#" className="black-text">categoria 1</a>
+                <NavLink to="/category/1" className="black-text">categoria 1</NavLink>
             </li>
             <li>
-                <a href="#" className="black-text">categoria 2</a>
+                <NavLink to="/category/2" className="black-text">categoria 2</NavLink>
             </li>
         </ul>
         </>
