@@ -1,5 +1,6 @@
 import React , { useEffect, useState } from 'react'
 import ItemCount from './ItemCount'
+import ItemDetailContainer from './ItemDetailContainer'
 import ItemList from './ItemList'
 
 const productos = [
